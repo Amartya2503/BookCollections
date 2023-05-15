@@ -1,0 +1,14 @@
+body{
+    margin: 1rem;
+    
+}
+.MainContent{
+    padding:1rem;
+    font-family: sans-serif;
+    
+}
+.Card{
+    display: grid;
+    gap: 1.5rem;    
+    grid-template-columns: auto auto auto;
+}

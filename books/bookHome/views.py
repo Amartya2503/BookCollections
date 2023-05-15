@@ -22,6 +22,8 @@ class getBooks(GenericAPIView):
         if serializer.is_valid():
             serializer.save()
             return Response(data= serializer.data,status=status.HTTP_201_CREATED)
+        else:
+            return Response("nope")
     
 class getBooksId(GenericAPIView):
     serializer_class = BookSerializer
