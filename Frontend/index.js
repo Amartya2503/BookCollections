@@ -1,23 +1,11 @@
 
-console.log("here");
-
-function EditClick(){
-    console.log('here',event.target)
-}
-
-// let editBtn = document.getElementById('EditBtn')
-// editBtn.addEventListener('click',EditClick)
-
-let card = document.getElementById('CardId')
- card.append('hello')
-
- const url = 'http://127.0.0.1:8000/book'
+const url = 'http://127.0.0.1:8000/book'
 
  const xhr = new XMLHttpRequest()
  xhr.open('GET',url,true)
  xhr.onload = ()=>{
     if(xhr.status == 200 || xhr.status == 201){
-        
+
         let objects = JSON.parse(xhr.response)
        
         let card = document.getElementById('CardId')
